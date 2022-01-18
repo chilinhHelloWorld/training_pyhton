@@ -1,0 +1,11 @@
+pytest : run all file test
+pytest filename.py : run only file test
+pytest filename.py -v : display result of file test
+pytest -v -k "keyWorld or and": test with keyWorld of name funtion
+pytest -v -m mark: test with pytest.mark
+pytest -v -x : stop test when test case fail
+pytest -v -x --tb=no : none display result
+pytest -v --maxfail=number : limit funtion fail stop test
+@pytest.mark.skip(reason="title") : skip function test
+@pytest.mark.skipif(..., reason="title")
+pytest -v -s: display print in function
